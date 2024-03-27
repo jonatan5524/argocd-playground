@@ -1,0 +1,10 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: default
+  name: deployments-simple-deployment-deployment
+  annotations:
+    argocd.argoproj.io/sync-options: ServerSideApply=true
+spec:
+  replicas: 3
