@@ -4,5 +4,5 @@ kind: StorageClass
 metadata:
   name: local-path
   annotations:
-    argocd.argoproj.io/sync-options: ServerSideApply=true
+    argocd.argoproj.io/sync-options: ServerSideApply=true,Prune=false
     storageclass.kubernetes.io/is-default-class: "false"
